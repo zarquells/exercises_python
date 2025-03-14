@@ -51,4 +51,21 @@ print(answer03)
 
 # exercise 10
 msg_12 = int(input('Insira um número: '))
-# continuação later...
+list_of_numbs5 = []
+multiplicator = 1
+for i in range(0, 10):
+    list_of_numbs5.append(msg_12 * multiplicator)
+    multiplicator+=1
+print(f'Tabuada do 1 ao 10 do {msg_12}: {list_of_numbs5}')
+
+# exercise 11
+msg_13 = int(input('Insira um número: '))
+def divisores(num):
+    for i in range(1, num//2+1):
+        if num % i == 0:
+            yield i
+    yield num
+print(list(divisores(msg_13)))
+
+# exercise 12
+msg_14 = int(input('Insira um número: '))
